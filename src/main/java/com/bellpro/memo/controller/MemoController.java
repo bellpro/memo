@@ -32,7 +32,7 @@ public class MemoController {
 
     // 수정
     @PutMapping("/api/memos/{id}")
-    public Long updateMemo(@PathVariable Long id, MemoRequestDto requestDto){
+    public Long updateMemo(@PathVariable Long id, @RequestBody MemoRequestDto requestDto){ // 수정할 데이터 받아야함
         memoService.update(id, requestDto);
         return id;
     }
