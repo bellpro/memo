@@ -8,7 +8,7 @@ import javax.persistence.*;
 @Getter // Getter 메소드 생성
 @NoArgsConstructor  // 기본 생성자 생성
 @Entity // 테이블과 연결
-public class Memo {
+public class Memo extends Timestamped { // 상속받음
 
     // ID 열 (기본키)
     @Id
