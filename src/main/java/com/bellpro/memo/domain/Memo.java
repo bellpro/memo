@@ -34,4 +34,10 @@ public class Memo extends Timestamped { // 상속받음
         this.username = requestDto.getUsername();
         this.contents = requestDto.getContents();
     }
+
+    // Service 업데이트 메소드
+    public void update(MemoRequestDto requestDto){
+        this.username = requestDto.getUsername();
+        this.contents = requestDto.getContents();
+    }
 }
