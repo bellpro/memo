@@ -8,8 +8,8 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@500&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-    <script src="basic.js"></script>
+    <link rel="stylesheet" href="style.css">    <!--CSS 파일 분리-->
+    <script src="basic.js"></script>            <!--JS 파일 분리-->
 
 </head>
 
@@ -22,14 +22,14 @@
 </div>
 <div class="wrap">
     <div class="header">
-        <h2>Timeline Service</h2>
+        <h2>Bellpro 메모장</h2>
         <p>
-            공유하고 싶은 소식을 입력해주세요.
-            24시간이 지난 뒤에는 사라집니다.
+            나의 일상을 메모로 작성. <br>
+            꾸준히 기록하는 인생.
         </p>
     </div>
     <div class="area-write">
-        <textarea class="field" placeholder="공유하고 싶은 소식을 입력해주세요" name="contents" id="contents" cols="30"
+        <textarea class="field" placeholder="일상을 메모로 작성해주세요" name="contents" id="contents" cols="30"
                   rows="10"></textarea>
         <!--            <button class="btn btn-danger" onclick="writePost()">작성하기</button>-->
         <img src="images/send.png" alt="" onclick="writePost()">
